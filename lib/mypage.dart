@@ -15,11 +15,11 @@ class MyPage extends StatelessWidget {
             Row(
               children: [
                 CircleAvatar(
-                  backgroundImage: AssetImage(),
+                  backgroundImage: AssetImage(assets/images/IU.jpg),
                 ),
                 Column(
                   children: [
-                    Text("박주형"),
+                    Text("아이유"),
                     Text("서울대학교 기계항공공학부"),
                     Text("다물 레벨: 골드"),
                   ]
