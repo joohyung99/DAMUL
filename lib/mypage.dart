@@ -15,7 +15,7 @@ class MyPage extends StatelessWidget {
             Row(
               children: [
                 CircleAvatar(
-                  backgroundImage: AssetImage(assets/images/IU.jpg),
+                  backgroundImage: AssetImage('assets/images/IU.jpg'),
                 ),
                 Column(
                   children: [

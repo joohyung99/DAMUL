@@ -57,7 +57,7 @@ class Authentication extends StatelessWidget {
             providerConfigs: [EmailProviderConfiguration()],
           );
         }
-        return ChatScreen();
+        return home();
       },
     );
   }
