@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'become_newmember.dart';
 
 class newmember extends StatefulWidget {
   const newmember({Key? key}) : super(key: key);
@@ -16,7 +17,7 @@ class _newmemberState extends State<newmember> {
         title: Text("회원가입"),
         backgroundColor: Colors.black,
       ),
-      body: PhoneAuthTest(),
+      body: become_newmember(),
     );
   }
 }
