@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
-class MyPage extends StatelessWidget {
+class MyPage extends StatefulWidget {
 
+  @override
+  State<MyPage> createState() => _MyPageState();
+}
+
+class _MyPageState extends State<MyPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,37 +16,45 @@ class MyPage extends StatelessWidget {
           backgroundColor: Colors.teal,
         ),
         body: Column(
-          children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  backgroundImage: AssetImage('assets/images/IU.jpg'),
-                ),
-                Column(
+            children: [
+              SizedBox(height: 10,),
+              Row(
                   children: [
-                    Text("아이유"),
-                    Text("서울대학교 기계항공공학부"),
-                    Text("다물 레벨: 골드"),
+                    SizedBox(width: 20,),
+                    CircleAvatar(
+                      backgroundImage: AssetImage('assets/images/IU.jpg'),
+                      radius: 30,
+                    ),
+                    SizedBox(width: 10,),
+                    Column(
+                        children: [
+                          Container(
+                            child: Text("아이유"),
+                          ),
+
+                          Text("서울대학교 기계항공공학부"),
+                          Text("다물 레벨: 골드"),
+                        ]
+                    )
                   ]
-                )
-              ]
-            ),
-            Row(
-              children: [
-                TextButton(
-                  child: Text("과외 일정보기"),
-                  onPressed: (){},
-                ),
-                TextButton(
-                  child: Text("프로필 수정"),
-                  onPressed: (){},
-                )
-              ]
-            )
-          ]
+              ),
+              Row(
+                  children: [
+                    SizedBox(width: 20,),
+                    TextButton(
+                      child: Text("과외 일정보기"),
+                      onPressed: (){},
+                    ),
+                    TextButton(
+                      child: Text("프로필 수정"),
+                      onPressed: (){},
+                    )
+                  ]
+              )
+            ]
 
         )
 
     );
   }
-  }
+}
